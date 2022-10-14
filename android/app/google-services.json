@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1083795226589",
+    "project_id": "silkroad-trip",
+    "storage_bucket": "silkroad-trip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083795226589:android:66a13669ea24693f6ac034",
+        "android_client_info": {
+          "package_name": "com.example.silkroad_trip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083795226589-6nrjv1jv5rg2od00mr5ocbai7gdtbj0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYs854pwlDeHj5_PoiqxTBZVSEa8N-TYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083795226589-6nrjv1jv5rg2od00mr5ocbai7gdtbj0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

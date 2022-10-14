@@ -4,14 +4,20 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.0-271.7.beta <3.0.0'
+  sdk: '>=2.18.2 <3.0.0'
 
 dependencies:
   cupertino_icons: ^1.0.2
+  firebase_auth: ^3.11.2
+  firebase_core: ^1.24.0
   flutter:
     sdk: flutter
   flutter_native_splash: ^2.2.11
+  flutter_signin_button: ^2.0.0
   flutter_svg: ^1.1.5
+  google_sign_in: ^5.4.2
+  http: ^0.13.5
+  test: ^1.21.4
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -24,3 +30,5 @@ flutter_native_splash:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/logo/logo.png
