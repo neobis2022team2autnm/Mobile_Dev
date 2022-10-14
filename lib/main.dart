@@ -10,7 +10,7 @@ Future main() async {
 }
 
 Future initialization(BuildContext? context) async {
-  await Future.delayed(Duration(seconds: 2));
+  await Future.delayed(const Duration(milliseconds: 500));
 }
 
 class MyApp extends StatelessWidget {
@@ -60,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
+              // ignore: deprecated_member_use
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
