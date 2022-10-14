@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:silkroad_trip/resources/resources.dart';
-import 'auth_service.dart';
+import '../services/auth_service.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class LoginPage extends StatefulWidget {

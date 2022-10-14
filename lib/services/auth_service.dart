@@ -3,8 +3,8 @@ import 'package:http/http.dart' as http;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:silkroad_trip/home_page.dart';
-import 'package:silkroad_trip/login_page.dart';
+import 'package:silkroad_trip/views/home_page.dart';
+import 'package:silkroad_trip/views/login_page.dart';
 import 'package:silkroad_trip/main.dart';
 
 class AuthService {
