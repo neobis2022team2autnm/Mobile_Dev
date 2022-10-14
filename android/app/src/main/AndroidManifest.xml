@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.silkroad_trip">
    <application
-        android:label="silkroad_trip"
+        android:label="SilkRoad Trip"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
