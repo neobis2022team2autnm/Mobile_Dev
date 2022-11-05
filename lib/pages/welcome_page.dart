@@ -46,12 +46,13 @@ class _WelcomePageState extends State<WelcomePage> {
               height: double.maxFinite,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/welcomepage/' + images[index]),
+                  image:
+                      AssetImage('assets/images/welcomepage/' + images[index]),
                   fit: BoxFit.cover,
                 ),
               ),
               child: Container(
-                margin: EdgeInsets.only(top: 100, left: 20, right: 20),
+                margin: EdgeInsets.only(top: 70, left: 20, right: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

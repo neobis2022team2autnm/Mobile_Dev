@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:http/retry.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,8 +15,9 @@ class _HomePageState extends State<HomePage> {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.only(top: 60, left: 20),
+          padding: EdgeInsets.only(top: 35, left: 20),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 'SilkRoad Trip',
@@ -24,9 +26,14 @@ class _HomePageState extends State<HomePage> {
                     color: Color.fromRGBO(96, 125, 139, 1.0),
                     fontWeight: FontWeight.w200),
               ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.search),
+                iconSize: 30,
+              )
             ],
           ),
-        )
+        ),
       ],
     );
   }
