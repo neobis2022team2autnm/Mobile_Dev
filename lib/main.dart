@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white,
+      ),
+      home: MainPage(),
     );
   }
 }
