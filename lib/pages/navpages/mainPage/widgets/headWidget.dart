@@ -4,21 +4,14 @@ import 'package:silkroad_trip/resources/constants.dart';
 
 Widget headWidget() => Container(
       padding: EdgeInsets.only(left: 20, right: 10),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            'SilkRoad Trip',
-            style: GoogleFonts.tenorSans(
-                fontSize: 25,
-                color: AppColors.mainColor,
-                fontWeight: FontWeight.w200),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.search),
-            iconSize: 30,
-          )
-        ],
+      child: Align(
+        alignment: Alignment.centerLeft,
+        child: Text(
+          'SilkRoad Trip',
+          style: GoogleFonts.tenorSans(
+              fontSize: 25,
+              color: AppColors.mainColor,
+              fontWeight: FontWeight.w200),
+        ),
       ),
     );
