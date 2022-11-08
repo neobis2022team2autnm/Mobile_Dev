@@ -3,7 +3,7 @@ import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:silkroad_trip/pages/welcome_page.dart';
+import 'package:silkroad_trip/pages/welcomePages/welcome_page.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

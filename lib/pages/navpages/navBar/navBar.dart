@@ -1,8 +1,8 @@
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:silkroad_trip/pages/navpages/bar_item_page.dart';
-import 'package:silkroad_trip/pages/navpages/home_page.dart';
-import 'package:silkroad_trip/pages/navpages/my_page.dart';
-import 'package:silkroad_trip/pages/navpages/search_page.dart';
+import 'package:silkroad_trip/pages/navpages/planning/bar_item_page.dart';
+import 'package:silkroad_trip/pages/navpages/mainPage/home_page.dart';
+import 'package:silkroad_trip/pages/navpages/profilePage/my_page.dart';
+import 'package:silkroad_trip/pages/navpages/searchPage/search_page.dart';
 import 'package:flutter/material.dart';
 import 'package:silkroad_trip/resources/resources.dart';
 

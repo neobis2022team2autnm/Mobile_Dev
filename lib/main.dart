@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:silkroad_trip/pages/navpages/home_page.dart';
-import 'package:silkroad_trip/pages/navpages/main_page.dart';
-import 'package:silkroad_trip/pages/splashscreen.dart';
-import 'package:silkroad_trip/pages/welcome_page.dart';
+import 'package:silkroad_trip/pages/navpages/mainPage/home_page.dart';
+import 'package:silkroad_trip/pages/navpages/navBar/navBar.dart';
+import 'package:silkroad_trip/pages/welcomePages/splashscreen.dart';
+import 'package:silkroad_trip/pages/welcomePages/welcome_page.dart';
 
 void main() {
   runApp(const MyApp());
