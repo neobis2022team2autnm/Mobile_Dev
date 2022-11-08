@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:silkroad_trip/pages/navpages/mainPage/widgets/carouselWidget.dart';
 import 'package:silkroad_trip/pages/navpages/mainPage/widgets/headWidget.dart';
 import 'package:silkroad_trip/resources/resources.dart';
@@ -50,6 +51,7 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         padding: const EdgeInsets.only(top: 45),
         child: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -58,9 +60,53 @@ class _HomePageState extends State<HomePage> {
                 height: 15,
               ),
               CarouselWidget(items: items),
+              SizedBox(
+                height: 30,
+              ),
+              PopularArtic(),
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class PopularArtic extends StatelessWidget {
+  const PopularArtic({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.only(left: 15),
+      child: Column(
+        children: [
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Популярные статьи',
+              style: GoogleFonts.tenorSans(
+                fontSize: 25,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+          Row(
+            children: [
+              Container(
+                  width: 200,
+                  height: 200,
+                  child: Stack(
+                    children: [
+                      Image.asset(
+                          'assets/homePage/kyrgyzstan_rukhordo_c_andrey_novoselov.jpg')
+                    ],
+                  ))
+            ],
+          )
+        ],
       ),
     );
   }

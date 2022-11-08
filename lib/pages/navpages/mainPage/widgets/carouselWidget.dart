@@ -13,15 +13,11 @@ class CarouselWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80,
-      child: ListView.separated(
+      height: 100,
+      child: ListView.builder(
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemCount: 5,
-        separatorBuilder: (context, _) => const SizedBox(
-          width: 0,
-          height: 0,
-        ),
         itemBuilder: (context, index) => buildCard(item: items[index]),
       ),
     );
@@ -29,16 +25,21 @@ class CarouselWidget extends StatelessWidget {
 }
 
 Widget buildCard({required CardItem item}) => Container(
-      width: 90,
       child: Column(
         children: [
           Expanded(
-              child: SvgPicture.asset(
-            item.imageName,
-            fit: BoxFit.cover,
-          )),
+            child: IconButton(
+              padding: EdgeInsets.symmetric(horizontal: 7, vertical: 0),
+              icon: SvgPicture.asset(
+                item.imageName,
+                fit: BoxFit.cover,
+              ),
+              onPressed: (() {}),
+              iconSize: 75,
+            ),
+          ),
           const SizedBox(
-            height: 4,
+            height: 0,
           ),
           Text(item.title)
         ],
