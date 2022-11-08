@@ -3,7 +3,6 @@ import 'package:silkroad_trip/widgets/app_large_text.dart';
 import 'package:silkroad_trip/widgets/app_text.dart';
 import 'package:silkroad_trip/widgets/responsive_button.dart';
 import 'package:flutter/material.dart';
-import 'package:silkroad_trip/resources/resources.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});
@@ -37,7 +36,7 @@ class _WelcomePageState extends State<WelcomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView.builder(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.vertical,
           itemCount: images.length,
           itemBuilder: (_, index) {
@@ -46,13 +45,12 @@ class _WelcomePageState extends State<WelcomePage> {
               height: double.maxFinite,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image:
-                      AssetImage('assets/welcomepage/' + images[index]),
+                  image: AssetImage('assets/welcomepage/' + images[index]),
                   fit: BoxFit.cover,
                 ),
               ),
               child: Container(
-                margin: EdgeInsets.only(top: 70, left: 20, right: 20),
+                margin: const EdgeInsets.only(top: 70, left: 20, right: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -66,7 +64,7 @@ class _WelcomePageState extends State<WelcomePage> {
                           itemCount: subtitle.length,
                           text: subtitle[index],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Container(
@@ -78,16 +76,16 @@ class _WelcomePageState extends State<WelcomePage> {
                             itemCount: description.length,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
-                        LogInButton(),
+                        const LogInButton(),
                       ],
                     ),
                     Column(
                       children: List.generate(2, (indexDots) {
                         return Container(
-                          margin: EdgeInsets.only(bottom: 2),
+                          margin: const EdgeInsets.only(bottom: 2),
                           width: 8,
                           height: index == indexDots ? 25 : 8,
                           decoration: BoxDecoration(

@@ -11,7 +11,7 @@ class LogInButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
-            backgroundColor: AppColors.buttonBackgroundDark,
+            backgroundColor: AppColors.mainColor,
             padding: EdgeInsets.all(8)),
         onPressed: () {},
         child: Text('Log in'));
