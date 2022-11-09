@@ -3,7 +3,6 @@ part of 'resources.dart';
 class Images {
   Images._();
 
-  
   static const String homeSel = 'assets/navBar/homeSel.svg';
   static const String homeUnSel = 'assets/navBar/homeUnSel.svg';
   static const String pickerSel = 'assets/navBar/pickerSel.svg';
@@ -22,5 +21,11 @@ class Images {
   static const String newsUnSel = 'assets/homePage/newsUnSel.svg';
   static const String restaurantsSel = 'assets/homePage/restaurantsSel.svg';
   static const String restaurantsUnSel = 'assets/homePage/restaurantsUnSel.svg';
-
+  static const String likeNotAdd = 'assets/homePage/likeNotAdd.png';
+  static const String akTuz = 'assets/homePage/aktuz.png';
+  static const String chashaManasa = 'assets/homePage/chashaManasa.png';
+  static const String chinaTown = 'assets/homePage/chinaTown.png';
+  static const String yssykk = 'assets/homePage/yssykk.png';
+  static const String navat = 'assets/homePage/navat.png';
+  static const String supara = 'assets/homePage/supara.png';
 }

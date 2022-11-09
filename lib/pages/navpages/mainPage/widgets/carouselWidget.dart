@@ -13,6 +13,7 @@ class CarouselWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(left: 3),
       height: 100,
       child: ListView.builder(
         physics: const BouncingScrollPhysics(),

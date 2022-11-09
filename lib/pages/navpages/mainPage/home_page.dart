@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:silkroad_trip/pages/navpages/mainPage/widgets/carouselWidget.dart';
 import 'package:silkroad_trip/pages/navpages/mainPage/widgets/headWidget.dart';
+import 'package:silkroad_trip/pages/navpages/mainPage/widgets/placeToRelax.dart';
+import 'package:silkroad_trip/pages/navpages/mainPage/widgets/placesToEat.dart';
+import 'package:silkroad_trip/pages/navpages/mainPage/widgets/popularArtic.dart';
+import 'package:silkroad_trip/resources/constants.dart';
 import 'package:silkroad_trip/resources/resources.dart';
 
 class CardItem {
@@ -64,49 +68,17 @@ class _HomePageState extends State<HomePage> {
                 height: 30,
               ),
               PopularArtic(),
+              SizedBox(
+                height: 40,
+              ),
+              PlacesToEat(),
+              SizedBox(
+                height: 40,
+              ),
+              PlacesToRelax(),
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class PopularArtic extends StatelessWidget {
-  const PopularArtic({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.only(left: 15),
-      child: Column(
-        children: [
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              'Популярные статьи',
-              style: GoogleFonts.tenorSans(
-                fontSize: 25,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ),
-          Row(
-            children: [
-              Container(
-                  width: 200,
-                  height: 200,
-                  child: Stack(
-                    children: [
-                      Image.asset(
-                          'assets/homePage/kyrgyzstan_rukhordo_c_andrey_novoselov.jpg')
-                    ],
-                  ))
-            ],
-          )
-        ],
       ),
     );
   }

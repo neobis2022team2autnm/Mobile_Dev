@@ -6,6 +6,6 @@ class AppColors {
   static final Color bigTextColor = Color(0xFF2e2e31);
   static final Color starColor = Color(0xFFe7bb4e);
   static final Color mainTextColor = Color(0xFFababad);
-  static final Color buttonBackground = Color(0xFFf1f1f9);
+  static final Color whiteMain = Color(0xFFf1f1f9);
   static final Color mainColor = Color.fromRGBO(96, 125, 139, 1.0);
 }
