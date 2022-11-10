@@ -62,7 +62,7 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(
             label: "Profile",
             icon: SvgPicture.asset(Images.profileUnSel),
-            activeIcon: SvgPicture.asset(Images.profileUnSel),
+            activeIcon: SvgPicture.asset(Images.profileSel),
           ),
         ],
       ),

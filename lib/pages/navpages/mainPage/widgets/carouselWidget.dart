@@ -13,11 +13,14 @@ class CarouselWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(left: 3),
-      height: 100,
-      child: ListView.builder(
+      padding: EdgeInsets.only(left: 5),
+      height: 90,
+      child: ListView.separated(
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
+        separatorBuilder: (context, index) => SizedBox(
+          width: 15,
+        ),
         itemCount: 5,
         itemBuilder: (context, index) => buildCard(item: items[index]),
       ),
@@ -29,14 +32,16 @@ Widget buildCard({required CardItem item}) => Container(
       child: Column(
         children: [
           Expanded(
-            child: IconButton(
-              padding: EdgeInsets.symmetric(horizontal: 7, vertical: 0),
-              icon: SvgPicture.asset(
-                item.imageName,
-                fit: BoxFit.cover,
-              ),
-              onPressed: (() {}),
-              iconSize: 75,
+            child: SizedBox(
+              width: 70,
+              child: Material(
+                  color: Colors.white,
+                  child: Ink.image(
+                    image: AssetImage(item.imageName),
+                    child: InkWell(
+                      onTap: () {},
+                    ),
+                  )),
             ),
           ),
           const SizedBox(

@@ -11,7 +11,7 @@ class PlacesToEat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(left: 20, right: 15),
+      padding: EdgeInsets.only(left: 10, right: 0),
       child: Column(
         children: [
           Align(
@@ -223,13 +223,16 @@ class PlacesToEat extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  // ignore: deprecated_member_use
-                  primary: AppColors.mainColor, // foreground
+              Container(
+                padding: EdgeInsets.only(right: 10),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    // ignore: deprecated_member_use
+                    primary: AppColors.mainColor, // foreground
+                  ),
+                  onPressed: () {},
+                  child: Text('Подробнее'),
                 ),
-                onPressed: () {},
-                child: Text('Подробнее'),
               )
             ],
           ),
