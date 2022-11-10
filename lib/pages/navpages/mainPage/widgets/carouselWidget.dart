@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:silkroad_trip/pages/navpages/mainPage/home_page.dart';
+import 'package:silkroad_trip/resources/constants.dart';
 
 class CarouselWidget extends StatelessWidget {
   const CarouselWidget({
@@ -39,6 +40,7 @@ Widget buildCard({required CardItem item}) => Container(
                   child: Ink.image(
                     image: AssetImage(item.imageName),
                     child: InkWell(
+                      splashColor: AppColors.mainColor.withOpacity(0.1),
                       onTap: () {},
                     ),
                   )),
