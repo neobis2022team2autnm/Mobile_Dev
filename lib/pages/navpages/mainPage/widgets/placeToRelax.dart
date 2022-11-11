@@ -18,14 +18,14 @@ class PlacesToRelax extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: RichText(
                 text: TextSpan(
-                  text: 'Места, где можно ',
+                  text: 'Places, you can ',
                   style: GoogleFonts.tenorSans(
                       fontSize: 25,
                       fontWeight: FontWeight.w500,
                       color: Colors.black),
                   children: <TextSpan>[
                     TextSpan(
-                      text: '          отдохнуть',
+                      text: 'relax',
                       style: GoogleFonts.tenorSans(
                         fontSize: 25,
                         fontWeight: FontWeight.w500,
@@ -239,7 +239,7 @@ class PlacesToRelax extends StatelessWidget {
                     primary: AppColors.mainColor, // foreground
                   ),
                   onPressed: () {},
-                  child: Text('Подробнее'),
+                  child: Text('Read more'),
                 ),
               )
             ],

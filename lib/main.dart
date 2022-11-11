@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:silkroad_trip/pages/auth/auth.dart';
 import 'package:silkroad_trip/pages/navpages/mainPage/home_page.dart';
 import 'package:silkroad_trip/pages/navpages/navBar/navBar.dart';
 import 'package:silkroad_trip/pages/welcomePages/splashscreen.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: MainPage(),
+      home: LoginPage(),
     );
   }
 }

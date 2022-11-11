@@ -18,14 +18,14 @@ class PlacesToEat extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: RichText(
                 text: TextSpan(
-                  text: 'Места, где можно ',
+                  text: 'Places to eat ',
                   style: GoogleFonts.tenorSans(
                       fontSize: 25,
                       fontWeight: FontWeight.w500,
                       color: Colors.black),
                   children: <TextSpan>[
                     TextSpan(
-                      text: '          вкусно',
+                      text: '                     good',
                       style: GoogleFonts.tenorSans(
                         fontSize: 25,
                         fontWeight: FontWeight.w500,
@@ -33,7 +33,7 @@ class PlacesToEat extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: ' поесть',
+                      text: ' eat',
                       style: GoogleFonts.tenorSans(
                         fontSize: 25,
                         fontWeight: FontWeight.w500,
@@ -62,10 +62,10 @@ class PlacesToEat extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      left: 64,
-                      bottom: 25,
+                      left: 60,
+                      bottom: 30,
                       child: Text(
-                        'Супара',
+                        'Supara',
                         maxLines: 3,
                         style: GoogleFonts.cantarell(
                             color: Colors.white,
@@ -109,10 +109,10 @@ class PlacesToEat extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      left: 65,
+                      left: 70,
                       bottom: 25,
                       child: Text(
-                        'Фаиза',
+                        'Faiza',
                         maxLines: 2,
                         style: GoogleFonts.cantarell(
                             color: Colors.white,
@@ -156,11 +156,11 @@ class PlacesToEat extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      left: 20,
+                      left: 10,
                       bottom: 35,
                       right: 15,
                       child: Text(
-                        'Чайхана “Navat”',
+                        'Chaikhana “Navat”',
                         maxLines: 4,
                         style: GoogleFonts.cantarell(
                             color: Colors.white,
@@ -248,7 +248,7 @@ class PlacesToEat extends StatelessWidget {
                     primary: AppColors.mainColor, // foreground
                   ),
                   onPressed: () {},
-                  child: Text('Подробнее'),
+                  child: Text('Read more'),
                 ),
               )
             ],

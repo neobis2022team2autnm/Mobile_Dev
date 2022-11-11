@@ -33,5 +33,5 @@ class Images {
   static const String jannat = 'assets/homePage/jannat.png';
   static const String novotel = 'assets/homePage/novotel.png';
   static const String orionHotel = 'assets/homePage/orionHotel.png';
-  
+  static const String logo = 'assets/logo/logo.png';
 }

@@ -17,7 +17,7 @@ class PopularArtic extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              'Популярные статьи',
+              'Popular articles',
               style: GoogleFonts.tenorSans(
                 fontSize: 25,
                 fontWeight: FontWeight.w500,
@@ -44,8 +44,8 @@ class PopularArtic extends StatelessWidget {
                       bottom: 25,
                       right: 20,
                       child: Text(
-                        'Почему все любят отдыхать на ыссык-куле?',
-                        maxLines: 3,
+                        'Why does everyone love holidaying at Yssyk-kul?',
+                        maxLines: 4,
                         style: GoogleFonts.cantarell(
                             color: Colors.white,
                             fontWeight: FontWeight.w700,
@@ -88,7 +88,7 @@ class PopularArtic extends StatelessWidget {
                       bottom: 25,
                       right: 10,
                       child: Text(
-                        'Ущелье Ак-Тюз. Интересные факты',
+                        'Ak-Tyuz Gorge. Interesting facts',
                         maxLines: 2,
                         style: GoogleFonts.cantarell(
                             color: Colors.white,
@@ -133,7 +133,7 @@ class PopularArtic extends StatelessWidget {
                       bottom: 35,
                       right: 15,
                       child: Text(
-                        '«Чаша Манаса» Красота водопада в Барскоонском ущелье',
+                        '"Manas Bowl" The beauty of a waterfall in the Barskoon Gorge',
                         maxLines: 4,
                         style: GoogleFonts.cantarell(
                             color: Colors.white,
@@ -177,7 +177,7 @@ class PopularArtic extends StatelessWidget {
                       bottom: 35,
                       right: 15,
                       child: Text(
-                        '«Чаша Манаса» Красота водопада в Барскоонском ущелье',
+                        '"Manas Bowl" The beauty of a waterfall in the Barskoon Gorge',
                         maxLines: 4,
                         style: GoogleFonts.cantarell(
                             color: Colors.white,
@@ -216,7 +216,7 @@ class PopularArtic extends StatelessWidget {
                     primary: AppColors.mainColor, // foreground
                   ),
                   onPressed: () {},
-                  child: Text('Подробнее'),
+                  child: Text('Read more'),
                 ),
               )
             ],

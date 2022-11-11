@@ -29,23 +29,23 @@ class _HomePageState extends State<HomePage> {
   List<CardItem> items = [
     const CardItem(
       imageName: Images.articlesUnSel,
-      title: 'Статьи',
+      title: 'Articles',
     ),
     const CardItem(
       imageName: Images.newsUnSel,
-      title: 'Новости',
+      title: 'News',
     ),
     const CardItem(
       imageName: Images.lifehackUnSel,
-      title: 'Лайфхаки',
+      title: 'Lifehacks',
     ),
     const CardItem(
       imageName: Images.hotelUnSel,
-      title: 'Отели',
+      title: 'Hotels',
     ),
     const CardItem(
       imageName: Images.restaurantsUnSel,
-      title: 'Рестораны',
+      title: 'Restaurants',
     ),
   ];
 

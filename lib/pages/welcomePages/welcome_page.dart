@@ -21,11 +21,11 @@ class _WelcomePageState extends State<WelcomePage> {
   ];
 
   List subtitle = [
-    "Открой красоты Кыргызстана с новой стороны",
+    "Discover the beauty of Kyrgyzstan from a new perspective",
   ];
 
   List description = [
-    "Открой красоты Кыргызстана с новой стороны",
+    "Discover the beauty of Kyrgyzstan from a new perspective",
   ];
 
   @override
