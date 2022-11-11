@@ -49,13 +49,17 @@ class PlacesToEat extends StatelessWidget {
             children: [
               Container(
                 width: 180,
-                height: 170,
+                height: 180,
                 child: Stack(
                   alignment: AlignmentDirectional.topCenter,
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(Images.supara),
+                      child: Image.asset(
+                        Images.supara,
+                        height: 160,
+                        fit: BoxFit.fitHeight,
+                      ),
                     ),
                     Positioned(
                       left: 64,
@@ -92,13 +96,17 @@ class PlacesToEat extends StatelessWidget {
               ),
               Container(
                 width: 180,
-                height: 170,
+                height: 180,
                 child: Stack(
                   alignment: AlignmentDirectional.topCenter,
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(Images.supara),
+                      child: Image.asset(
+                        Images.faiza,
+                        fit: BoxFit.fitHeight,
+                        height: 160,
+                      ),
                     ),
                     Positioned(
                       left: 65,
@@ -142,7 +150,10 @@ class PlacesToEat extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(Images.chinaTown),
+                      child: Image.asset(
+                        Images.navat,
+                        height: 165,
+                      ),
                     ),
                     Positioned(
                       left: 20,
@@ -184,9 +195,15 @@ class PlacesToEat extends StatelessWidget {
                 child: Stack(
                   alignment: AlignmentDirectional.topCenter,
                   children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(Images.chinaTown),
+                    Positioned(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          Images.chinaTown,
+                          height: 165,
+                          fit: BoxFit.fitHeight,
+                        ),
+                      ),
                     ),
                     Positioned(
                       left: 40,

@@ -48,7 +48,11 @@ class PlacesToRelax extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(Images.supara),
+                      child: Image.asset(
+                        Images.orionHotel,
+                        height: 160,
+                        fit: BoxFit.fitHeight,
+                      ),
                     ),
                     Positioned(
                       left: 44,
@@ -91,13 +95,17 @@ class PlacesToRelax extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(Images.supara),
+                      child: Image.asset(
+                        Images.hyatt,
+                        height: 160,
+                        fit: BoxFit.fitHeight,
+                      ),
                     ),
                     Positioned(
-                      left: 50,
+                      left: 30,
                       bottom: 25,
                       child: Text(
-                        'Sheraton',
+                        'Hyatt Regency',
                         maxLines: 2,
                         style: GoogleFonts.cantarell(
                             color: Colors.white,
@@ -135,7 +143,11 @@ class PlacesToRelax extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(Images.chinaTown),
+                      child: Image.asset(
+                        Images.novotel,
+                        height: 160,
+                        fit: BoxFit.fitHeight,
+                      ),
                     ),
                     Positioned(
                       left: 60,
@@ -178,7 +190,11 @@ class PlacesToRelax extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(Images.chinaTown),
+                      child: Image.asset(
+                        Images.jannat,
+                        height: 160,
+                        fit: BoxFit.fitHeight,
+                      ),
                     ),
                     Positioned(
                       left: 25,

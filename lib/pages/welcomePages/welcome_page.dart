@@ -1,7 +1,7 @@
 import 'package:silkroad_trip/resources/constants.dart';
 import 'package:silkroad_trip/widgets/app_large_text.dart';
 import 'package:silkroad_trip/widgets/app_text.dart';
-import 'package:silkroad_trip/widgets/responsive_button.dart';
+import 'package:silkroad_trip/widgets/welcome_button.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -14,22 +14,18 @@ class WelcomePage extends StatefulWidget {
 class _WelcomePageState extends State<WelcomePage> {
   List images = [
     "welcome-one.png",
-    "welcome-two.png",
   ];
 
   List title = [
-    "SSS",
-    "WWW",
+    "SilkRoad Trip",
   ];
 
   List subtitle = [
-    "Sub",
-    "Sub2",
+    "Открой красоты Кыргызстана с новой стороны",
   ];
 
   List description = [
-    "Des1",
-    "Des2",
+    "Открой красоты Кыргызстана с новой стороны",
   ];
 
   @override
@@ -50,7 +46,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 ),
               ),
               child: Container(
-                margin: const EdgeInsets.only(top: 70, left: 20, right: 20),
+                margin: const EdgeInsets.only(top: 50, left: 20, right: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -59,11 +55,11 @@ class _WelcomePageState extends State<WelcomePage> {
                       children: [
                         AppLargeText(
                             itemCount: title.length, text: title[index]),
-                        AppText(
-                          size: 30,
-                          itemCount: subtitle.length,
-                          text: subtitle[index],
-                        ),
+                        // AppText(
+                        //   size: 30,
+                        //   itemCount: subtitle.length,
+                        //   text: subtitle[index],
+                        // ),
                         const SizedBox(
                           height: 20,
                         ),
@@ -72,31 +68,31 @@ class _WelcomePageState extends State<WelcomePage> {
                           child: AppText(
                             text: description[index],
                             color: AppColors.textColor2,
-                            size: 14,
+                            size: 20,
                             itemCount: description.length,
                           ),
                         ),
                         const SizedBox(
-                          height: 15,
+                          height: 20,
                         ),
                         const LogInButton(),
                       ],
                     ),
-                    Column(
-                      children: List.generate(2, (indexDots) {
-                        return Container(
-                          margin: const EdgeInsets.only(bottom: 2),
-                          width: 8,
-                          height: index == indexDots ? 25 : 8,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8),
-                            color: index == indexDots
-                                ? AppColors.mainColor
-                                : AppColors.mainColor.withOpacity(0.3),
-                          ),
-                        );
-                      }),
-                    )
+                    // Column(
+                    //   children: List.generate(2, (indexDots) {
+                    //     return Container(
+                    //       margin: const EdgeInsets.only(bottom: 2),
+                    //       width: 8,
+                    //       height: index == indexDots ? 25 : 8,
+                    //       decoration: BoxDecoration(
+                    //         borderRadius: BorderRadius.circular(8),
+                    //         color: index == indexDots
+                    //             ? AppColors.mainColor
+                    //             : AppColors.mainColor.withOpacity(0.3),
+                    //       ),
+                    //     );
+                    //   }),
+                    // )
                   ],
                 ),
               ),

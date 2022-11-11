@@ -8,4 +8,5 @@ class AppColors {
   static final Color mainTextColor = Color(0xFFababad);
   static final Color whiteMain = Color(0xFFf1f1f9);
   static final Color mainColor = Color.fromRGBO(96, 125, 139, 1.0);
+  static final Color buttonMain = Color(0xFF5d69b3);
 }

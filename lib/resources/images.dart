@@ -28,4 +28,10 @@ class Images {
   static const String yssykk = 'assets/homePage/yssykk.png';
   static const String navat = 'assets/homePage/navat.png';
   static const String supara = 'assets/homePage/supara.png';
+  static const String faiza = 'assets/homePage/faiza.png';
+  static const String hyatt = 'assets/homePage/hyatt.png';
+  static const String jannat = 'assets/homePage/jannat.png';
+  static const String novotel = 'assets/homePage/novotel.png';
+  static const String orionHotel = 'assets/homePage/orionHotel.png';
+  
 }
